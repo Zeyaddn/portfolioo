@@ -1,0 +1,1381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeyad Elassad — Freelance Full Stack Developer &amp; Software Engineer</title>
+  <meta name="description" content="Portfolio of Zeyad Elassad, a Freelance Full Stack Developer specializing in Next.js 14, React 18, Node.js, Python, PostgreSQL, and high-performance production systems.">
+  <meta name="author" content="Zeyad Elassad">
+  <link rel="canonical" href="https://zeyadelassad.dev/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zeyadelassad.dev/">
+  <meta property="og:title" content="Zeyad Elassad — Freelance Full Stack Developer">
+  <meta property="og:description" content="Full Stack Web Applications, High-Performance Next.js Architecture, and Scalable Backend Systems.">
+  <meta property="og:image" content="https://zeyadelassad.dev/assets/img/hero-cutout.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zeyad Elassad — Full Stack Developer">
+  <meta name="twitter:description" content="Freelance Full Stack Developer building scalable web applications and APIs.">
+  <meta name="twitter:image" content="https://zeyadelassad.dev/assets/img/hero-cutout.png">
+
+  <meta name="theme-color" content="#FFFFFF">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111113'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23FFFFFF'/%3E%3C/svg%3E">
+
+  <!-- Preload Critical LCP Hero Image -->
+  <link rel="preload" as="image" href="./assets/img/hero-cutout.webp" type="image/webp" fetchpriority="high">
+
+  <!-- Google Fonts Preconnect & Loading (Cairo + Syne + Instrument Serif + Manrope + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS (Local Zero-Latency) -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <!-- Production Tailwind CSS Output -->
+  <link rel="stylesheet" href="./dist/output.css">
+
+  <!-- Custom Design Tokens, Clean Centered Hero, Styles -->
+  <link rel="stylesheet" href="./css/custom.css">
+
+  <!-- JSON-LD Structured Data Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://zeyadelassad.dev/#person",
+        "name": "Zeyad Elassad",
+        "alternateName": "زياد الأسعد",
+        "jobTitle": "Freelance Full Stack Developer",
+        "description": "Freelance Full Stack Developer specializing in Next.js 14, React 18, TypeScript, Node.js, PostgreSQL, and high-performance production web systems.",
+        "url": "https://zeyadelassad.dev/",
+        "image": "https://zeyadelassad.dev/assets/img/hero-cutout.webp",
+        "email": "zeyadkassem83@gmail.com",
+        "sameAs": [
+          "https://github.com/Zeyaddn?tab=repositories",
+          "https://www.linkedin.com/in/zeyad-elassad-212236438/"
+        ],
+        "knowsAbout": ["Next.js 14", "React 18", "TypeScript", "Node.js", "PostgreSQL", "PHP", "MySQL", "PWA", "Storybook", "Web Performance", "SEO", "Tailwind CSS"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://zeyadelassad.dev/#website",
+        "url": "https://zeyadelassad.dev/",
+        "name": "Zeyad Elassad — Full Stack Developer Portfolio",
+        "description": "Production Portfolio of Zeyad Elassad, Full Stack Developer & Software Engineer.",
+        "publisher": {
+          "@id": "https://zeyadelassad.dev/#person"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="120" tabindex="0">
+
+  <!-- Accessibility Skip Link -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- Subtle Film-Grain Texture Overlay -->
+  <div class="film-grain" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       SECTION 1: NAVBAR
+       ========================================================================= -->
+  <header class="site-navbar" id="mainNavbar">
+    <div class="container-xxl">
+      <div class="row align-items-center justify-content-between">
+        
+        <!-- Brand Logo -->
+        <div class="col-auto">
+          <a href="#hero" class="brand-monogram" aria-label="Zeyad Elassad - Home">
+            <span class="tw-font-black tw-tracking-tight">ZE</span>
+            <span class="dot" aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation Links with Micro Icons -->
+        <div class="col-auto d-none d-lg-flex align-items-center gap-1">
+          <nav aria-label="Primary desktop navigation">
+            <a href="#about" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+              <span>About</span>
+            </a>
+            <a href="#services" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+              <span>Services</span>
+            </a>
+            <a href="#skills" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Stack</span>
+            </a>
+            <a href="#work" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              <span>Projects</span>
+            </a>
+            <a href="#experience" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Journey</span>
+            </a>
+            <a href="#contact" class="nav-link-custom">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              <span>Contact</span>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Action CTAs + Theme Toggle + Mobile Menu Trigger -->
+        <div class="col-auto d-flex align-items-center gap-3">
+          <!-- CV Download Button (Header) -->
+          <a href="./assets/Zeyad_Elassad_CV.pdf" download="Zeyad_Elassad_CV.pdf" class="btn-ghost-custom tw-py-2 tw-px-3.5 tw-text-xs d-none d-sm-inline-flex" title="Download Zeyad Elassad CV (PDF)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span>Resume / CV</span>
+          </a>
+
+          <!-- Light/Dark Mode Switcher -->
+          <button type="button" class="theme-toggle-btn tw-w-10 tw-h-10 tw-rounded-full tw-border tw-border-gray-200 tw-flex tw-items-center tw-justify-content-center tw-text-gray-800 hover:tw-text-black tw-transition-colors tw-bg-white" aria-label="Toggle theme">
+            <span class="theme-icon-container" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </span>
+          </button>
+
+          <!-- Primary CTA Button -->
+          <a href="#contact" class="btn-primary-custom d-none d-md-inline-flex magnetic-target">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Hire Me</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="btn d-lg-none tw-p-2 tw-text-gray-900 hover:tw-text-black tw-border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavOffcanvas" aria-controls="mobileNavOffcanvas" aria-label="Open mobile menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Offcanvas Menu (Bootstrap 5.3) -->
+  <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="mobileNavOffcanvas" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header tw-p-6 tw-border-b tw-border-gray-200">
+      <h2 class="offcanvas-title tw-text-xl tw-font-bold tw-tracking-tight" id="mobileNavLabel">Navigation</h2>
+      <button type="button" class="btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="offcanvas-body tw-p-8 tw-flex tw-flex-col tw-justify-between">
+      <nav class="tw-flex tw-flex-col tw-gap-5" aria-label="Mobile navigation">
+        <a href="#about" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900 hover:tw-text-black tw-transition-colors">About</a>
+        <a href="#services" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900 hover:tw-text-black tw-transition-colors">Services / ما أقدمه</a>
+        <a href="#skills" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900 hover:tw-text-black tw-transition-colors">Tech Stack</a>
+        <a href="#work" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900 hover:tw-text-black tw-transition-colors">Projects</a>
+        <a href="#experience" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900 hover:tw-text-black tw-transition-colors">Journey</a>
+        <a href="#contact" class="tw-text-2xl tw-font-bold tw-no-underline tw-text-gray-900">Get in Touch</a>
+      </nav>
+      <div class="tw-pt-8 tw-border-t tw-border-gray-200">
+        <div class="hero-available-badge tw-mb-4">
+          <span class="pulsing-dot" aria-hidden="true"></span>
+          <span>Available for Freelance Projects</span>
+        </div>
+        <div class="tw-flex tw-gap-4 tw-mt-4">
+          <a href="https://github.com/Zeyaddn?tab=repositories" target="_blank" rel="noopener noreferrer" class="tw-text-sm tw-font-mono tw-text-gray-900 tw-font-bold tw-inline-flex tw-items-center tw-gap-1">
+            <span>GitHub</span>
+            <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/zeyad-elassad-212236438/" target="_blank" rel="noopener noreferrer" class="tw-text-sm tw-font-mono tw-text-gray-900 tw-font-bold tw-inline-flex tw-items-center tw-gap-1">
+            <span>LinkedIn</span>
+            <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+    <!-- =========================================================================
+         SECTION 2: HERO (CENTERED, EDITORIAL ITALIC HIGHLIGHT, ANIMATED PORTRAIT)
+         ========================================================================= -->
+    <section id="hero" aria-label="Hero Introduction">
+      <div class="container-xxl position-relative tw-z-10">
+        <div class="hero-main-container">
+          
+          <!-- Top Available Status Pill with Live Indicator -->
+          <div class="tw-mb-3 text-center">
+            <div class="hero-available-badge">
+              <span class="pulsing-dot" aria-hidden="true"></span>
+              <span>Freelance Full Stack Developer &bull; Available For Projects</span>
+            </div>
+          </div>
+
+          <!-- Giant Editorial Background Typography Layered Behind the Image -->
+          <div class="hero-layered-text-backdrop" aria-hidden="true">
+            <span>FULL STACK</span>
+            <span class="stroke-text">DEVELOPER</span>
+          </div>
+
+          <!-- Centered Portrait Stage with Rotating Aura and Floating Badge -->
+          <div class="hero-portrait-stage-centered">
+            <div class="hero-portrait-glow-radial" aria-hidden="true"></div>
+            
+            <div class="hero-portrait-animated-wrapper" title="Zeyad Elassad — Freelance Full Stack Developer">
+              <picture>
+                <source srcset="./assets/img/hero-cutout.webp" type="image/webp">
+                <img 
+                  src="./assets/img/hero-cutout.png" 
+                  alt="Zeyad Elassad - Freelance Full Stack Developer" 
+                  class="hero-portrait-cutout-img"
+                  width="760" 
+                  height="760"
+                  fetchpriority="high" 
+                  decoding="async" 
+                  id="heroPortraitImage">
+              </picture>
+
+              <!-- Interactive Floating Badges Orbiting Portrait -->
+              <div class="floating-tech-chip chip-pos-top-left" title="Modern Stack">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span>Next.js 14 &bull; React 18</span>
+              </div>
+
+              <div class="floating-tech-chip chip-pos-bottom-right" title="Performance & 60fps Target">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>Sub-0.5s Load &bull; 60fps</span>
+              </div>
+
+              <div class="floating-tech-chip chip-pos-bottom-left" title="Scalable Backend">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                <span>Node &bull; PostgreSQL &bull; APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foreground Info & Name Overlay with Editorial Italic Font -->
+          <div class="position-relative tw-z-20 text-center tw-w-full">
+            <h1 class="hero-title tw-mb-2">
+              Zeyad Elassad
+            </h1>
+            
+            <!-- Headline with Instrument Serif Italic Accent -->
+            <p class="tw-text-2xl md:tw-text-3xl tw-font-semibold tw-text-gray-900 tw-mb-3">
+              Full Stack <span class="font-editorial-italic tw-text-3xl md:tw-text-4xl tw-font-normal">Developer</span> &amp; Software Engineer
+            </p>
+
+            <p class="tw-text-base md:tw-text-lg tw-text-gray-600 tw-leading-relaxed tw-mb-7 tw-max-w-2xl tw-mx-auto">
+              Architecting production-ready web applications, high-performance Next.js systems, and robust backend architectures with clean code and sub-second loading.
+            </p>
+
+            <!-- Action Buttons with Icons -->
+            <div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-3.5">
+              <a href="#work" class="btn-primary-custom magnetic-target" id="heroCtaWork">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <span>Explore Projects</span>
+              </a>
+              <button type="button" class="btn-ghost-custom magnetic-target" id="copyEmailHeroBtn" aria-label="Copy Zeyad Elassad Email to clipboard">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span>Copy Email</span>
+              </button>
+              <a href="./assets/Zeyad_Elassad_CV.pdf" download="Zeyad_Elassad_CV.pdf" class="btn-ghost-custom magnetic-target">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download CV</span>
+              </a>
+              <a href="#contact" class="btn-ghost-custom magnetic-target" id="heroCtaContact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <span>Get in Touch</span>
+              </a>
+            </div>
+
+            <!-- Social Links Badges (GitHub & LinkedIn) with Icons & Direct Arrows -->
+            <div class="tw-flex tw-flex-wrap tw-justify-center tw-items-center tw-gap-3.5 tw-mt-6">
+              <a href="https://github.com/Zeyaddn?tab=repositories" target="_blank" rel="noopener noreferrer" class="hero-social-pill magnetic-target" title="View GitHub Repositories">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Repositories</span>
+                <svg class="arrow-up-right-svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <span class="tw-text-gray-300 d-none d-sm-inline">&bull;</span>
+              <a href="https://www.linkedin.com/in/zeyad-elassad-212236438/" target="_blank" rel="noopener noreferrer" class="hero-social-pill magnetic-target" title="View LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn Profile</span>
+                <svg class="arrow-up-right-svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+
+            <!-- Interactive Live Developer Code Card / Terminal -->
+            <div class="dev-terminal-wrapper scroll-reveal delay-2">
+              <div class="dev-terminal-card" role="region" aria-label="Live Developer Code Preview">
+                <div class="terminal-header">
+                  <div class="terminal-dots" aria-hidden="true">
+                    <span class="dot-ctrl dot-red"></span>
+                    <span class="dot-ctrl dot-yellow"></span>
+                    <span class="dot-ctrl dot-green"></span>
+                  </div>
+                  <div class="terminal-tabs" role="tablist" aria-label="Code previews">
+                    <button type="button" class="terminal-tab-btn active" data-tab="tab-ts" role="tab" aria-selected="true" aria-controls="tab-ts">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                      <span>ZeyadProfile.ts</span>
+                    </button>
+                    <button type="button" class="terminal-tab-btn" data-tab="tab-json" role="tab" aria-selected="false" aria-controls="tab-json">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                      <span>StackConfig.json</span>
+                    </button>
+                    <button type="button" class="terminal-tab-btn" data-tab="tab-sh" role="tab" aria-selected="false" aria-controls="tab-sh">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+                      <span>audit.sh</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="terminal-body">
+                  <!-- Pane 1: TypeScript -->
+                  <div class="terminal-pane active" id="tab-ts" role="tabpanel">
+                    <pre class="tw-m-0"><code><span class="code-keyword">export const</span> <span class="code-var">engineer</span> = {
+  <span class="code-prop">name</span>: <span class="code-str">"Zeyad Elassad"</span>,
+  <span class="code-prop">role</span>: <span class="code-str">"Freelance Full Stack Developer"</span>,
+  <span class="code-prop">status</span>: <span class="code-str">"Available for Client Contracts &amp; Projects"</span>,
+  <span class="code-prop">coreStack</span>: [<span class="code-str">"Next.js 14"</span>, <span class="code-str">"React 18"</span>, <span class="code-str">"Node.js"</span>, <span class="code-str">"TypeScript"</span>, <span class="code-str">"PostgreSQL"</span>],
+  <span class="code-prop">architecture</span>: {
+    <span class="code-prop">uiPerformance</span>: <span class="code-str">"60 FPS (React.memo tuned)"</span>,
+    <span class="code-prop">lighthouseTarget</span>: <span class="code-num">100</span>,
+    <span class="code-prop">pwaCapability</span>: <span class="code-keyword">true</span>
+  },
+  <span class="code-prop">contact</span>: <span class="code-str">"zeyadkassem83@gmail.com"</span>
+};</code></pre>
+                  </div>
+
+                  <!-- Pane 2: JSON -->
+                  <div class="terminal-pane" id="tab-json" role="tabpanel">
+                    <pre class="tw-m-0"><code>{
+  <span class="code-prop">"specialization"</span>: [<span class="code-str">"Fintech Platforms"</span>, <span class="code-str">"EdTech LMS"</span>, <span class="code-str">"High-Traffic Portals"</span>],
+  <span class="code-prop">"workflow"</span>: [<span class="code-str">"Component-Driven (Storybook)"</span>, <span class="code-str">"Strict Typing"</span>, <span class="code-str">"Clean APIs"</span>],
+  <span class="code-prop">"speedTarget"</span>: <span class="code-str">"&lt; 0.5s First Load"</span>,
+  <span class="code-prop">"deliveryMethod"</span>: <span class="code-str">"Vercel Edge / Docker CI/CD"</span>
+}</code></pre>
+                  </div>
+
+                  <!-- Pane 3: Shell -->
+                  <div class="terminal-pane" id="tab-sh" role="tabpanel">
+                    <pre class="tw-m-0"><code><span class="code-comment"># Running production audit against zeyadelassad.dev</span>
+<span class="code-var">$</span> npx audit-portfolio --strict
+<span class="code-str">✔ Performance: 100/100 (sub-second FCP)</span>
+<span class="code-str">✔ Accessibility: 100/100 (WCAG 2.1 AA compliant)</span>
+<span class="code-str">✔ Best Practices: 100/100 (Secure headers &amp; clean bundle)</span>
+<span class="code-str">✔ SEO: 100/100 (Structured JSON-LD &amp; OpenGraph)</span>
+<span class="code-keyword">[SYSTEM READY FOR NEW PRODUCTION CONTRACTS]</span></code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 3: MARQUEE (TECH TICKER)
+         ========================================================================= -->
+    <section class="marquee-container" aria-label="Full Stack Technologies Marquee">
+      <div class="marquee-track" aria-hidden="true">
+        <span class="marquee-item">NEXT.JS 14 (REACT 18) <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">TYPESCRIPT <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">NODE.JS &amp; EXPRESS <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">STORYBOOK ARCHITECTURE <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">POSTGRESQL &amp; MYSQL <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">PWA &amp; OFFLINE CAPABILITY <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">REACT.MEMO 60FPS TUNING <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">TAILWIND CSS &amp; VANILLA TOKENS <span class="marquee-sep">✦</span></span>
+        <!-- Infinite duplicate -->
+        <span class="marquee-item">NEXT.JS 14 (REACT 18) <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">TYPESCRIPT <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">NODE.JS &amp; EXPRESS <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">STORYBOOK ARCHITECTURE <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">POSTGRESQL &amp; MYSQL <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">PWA &amp; OFFLINE CAPABILITY <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">REACT.MEMO 60FPS TUNING <span class="marquee-sep">✦</span></span>
+        <span class="marquee-item">TAILWIND CSS &amp; VANILLA TOKENS <span class="marquee-sep">✦</span></span>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 4: ABOUT & METRICS (ANIMATED ON SCROLL)
+         ========================================================================= -->
+    <section id="about" class="tw-py-28 hairline-border-b" aria-label="About Zeyad Elassad">
+      <div class="container-xxl">
+        <div class="row gy-5 align-items-center">
+          
+          <div class="col-12 col-lg-5 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 01 — BACKGROUND</span>
+            <h2 class="section-heading tw-mb-4">
+              Full Stack engineering with <span class="font-editorial-italic tw-font-normal">precision</span> and zero fluff.
+            </h2>
+            <div class="section-divider-line"></div>
+          </div>
+
+          <div class="col-12 col-lg-7 scroll-reveal-right">
+            <p class="tw-text-xl tw-text-gray-900 tw-font-medium tw-leading-relaxed tw-mb-6">
+              I am Zeyad Elassad, an independent Full Stack Developer working on production web applications, educational platforms, fintech solutions, and interactive platforms.
+            </p>
+            <p class="tw-text-gray-600 tw-leading-relaxed tw-mb-10">
+              I am currently working as a Freelancer — completely open and ready for new projects, client contracts, and full stack development opportunities. I specialize in turning complex requirements into fast, accessible, and maintainable systems using Next.js 14, React, Node.js, and clean database structures.
+            </p>
+
+            <!-- 4 Stat Counters (Triggered on Scroll) -->
+            <div class="row g-4">
+              <div class="col-6 col-sm-3 scroll-reveal delay-1">
+                <div class="stat-card">
+                  <div class="tw-font-black tw-text-3xl lg:tw-text-4xl tw-text-gray-900 tw-mb-1" data-counter-target="4" data-counter-suffix="+">0</div>
+                  <div class="mono-tag tw-text-gray-500">Years of Code</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 scroll-reveal delay-2">
+                <div class="stat-card">
+                  <div class="tw-font-black tw-text-3xl lg:tw-text-4xl tw-text-gray-900 tw-mb-1" data-counter-target="45" data-counter-suffix="+">0</div>
+                  <div class="mono-tag tw-text-gray-500">Shipped Projects</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 scroll-reveal delay-3">
+                <div class="stat-card">
+                  <div class="tw-font-black tw-text-3xl lg:tw-text-4xl tw-text-gray-900 tw-mb-1" data-counter-target="60" data-counter-suffix="fps">0</div>
+                  <div class="mono-tag tw-text-gray-500">UI Smoothness</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-3 scroll-reveal delay-4">
+                <div class="stat-card">
+                  <div class="tw-font-black tw-text-3xl lg:tw-text-4xl tw-text-gray-900 tw-mb-1" data-counter-target="100" data-counter-suffix="">0</div>
+                  <div class="mono-tag tw-text-gray-500">Lighthouse Target</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 5: FULL STACK SKILLS MATRIX
+         ========================================================================= -->
+    <section id="skills" class="tw-py-28 hairline-border-b" aria-label="Technical Skills and Tooling">
+      <div class="container-xxl">
+        <div class="row tw-mb-14">
+          <div class="col-12 col-md-8 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 02 — CAPABILITIES</span>
+            <h2 class="section-heading tw-mb-4">Full Stack Technical Stack.</h2>
+            <p class="tw-text-gray-600 tw-text-lg">Core technologies, architecture patterns, and engineering workflows I leverage in production applications.</p>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Frontend & Next.js -->
+          <div class="col-12 col-md-6 col-lg-3 scroll-reveal delay-1">
+            <div class="tw-bg-gray-50 tw-border tw-border-gray-200 tw-rounded-2xl tw-p-6 tw-h-full">
+              <div class="tw-flex tw-items-center tw-gap-2 tw-mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                <span class="mono-tag tw-text-gray-900 tw-font-bold">01 / FRONTEND</span>
+              </div>
+              <ul class="tw-list-none tw-p-0 tw-m-0 tw-space-y-3">
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Next.js 14 &amp; React 18</span><span class="mono-tag tw-text-gray-400">Core</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Storybook Components</span><span class="mono-tag tw-text-gray-400">Design</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>TypeScript</span><span class="mono-tag tw-text-gray-400">Strict</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Vanilla CSS Tokens</span><span class="mono-tag tw-text-gray-400">Clean</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Tailwind CSS</span><span class="mono-tag tw-text-gray-400">Utility</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 2. Performance & PWA -->
+          <div class="col-12 col-md-6 col-lg-3 scroll-reveal delay-2">
+            <div class="tw-bg-gray-50 tw-border tw-border-gray-200 tw-rounded-2xl tw-p-6 tw-h-full">
+              <div class="tw-flex tw-items-center tw-gap-2 tw-mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span class="mono-tag tw-text-gray-900 tw-font-bold">02 / PERFORMANCE</span>
+              </div>
+              <ul class="tw-list-none tw-p-0 tw-m-0 tw-space-y-3">
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>PWA &amp; Offline Cache</span><span class="mono-tag tw-text-gray-400">Worker</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>React.memo 60fps Tuning</span><span class="mono-tag tw-text-gray-400">Tune</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Web-Push Notification API</span><span class="mono-tag tw-text-gray-400">Push</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>SCORM 2004 Standard</span><span class="mono-tag tw-text-gray-400">LMS</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Sub-0.5s Load Time</span><span class="mono-tag tw-text-gray-400">Vitals</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 3. Backend & APIs -->
+          <div class="col-12 col-md-6 col-lg-3 scroll-reveal delay-3">
+            <div class="tw-bg-gray-50 tw-border tw-border-gray-200 tw-rounded-2xl tw-p-6 tw-h-full">
+              <div class="tw-flex tw-items-center tw-gap-2 tw-mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                <span class="mono-tag tw-text-gray-900 tw-font-bold">03 / BACKEND</span>
+              </div>
+              <ul class="tw-list-none tw-p-0 tw-m-0 tw-space-y-3">
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Node.js / Express</span><span class="mono-tag tw-text-gray-400">APIs</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>PHP &amp; Full Stack Architecture</span><span class="mono-tag tw-text-gray-400">Server</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>RESTful Endpoints &amp; JSON</span><span class="mono-tag tw-text-gray-400">HTTP</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Watch-Time Telemetry</span><span class="mono-tag tw-text-gray-400">Logs</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Auth &amp; Session Management</span><span class="mono-tag tw-text-gray-400">Security</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- 4. Databases & Deployment -->
+          <div class="col-12 col-md-6 col-lg-3 scroll-reveal delay-4">
+            <div class="tw-bg-gray-50 tw-border tw-border-gray-200 tw-rounded-2xl tw-p-6 tw-h-full">
+              <div class="tw-flex tw-items-center tw-gap-2 tw-mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                <span class="mono-tag tw-text-gray-900 tw-font-bold">04 / DATA &amp; DEPLOY</span>
+              </div>
+              <ul class="tw-list-none tw-p-0 tw-m-0 tw-space-y-3">
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>PostgreSQL &amp; MySQL</span><span class="mono-tag tw-text-gray-400">Relational</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Vercel Edge &amp; GitHub Actions</span><span class="mono-tag tw-text-gray-400">CI/CD</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Docker Containers</span><span class="mono-tag tw-text-gray-400">DevOps</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Git &amp; Version Control</span><span class="mono-tag tw-text-gray-400">Workflows</span></li>
+                <li class="tw-flex tw-items-center tw-justify-between tw-text-gray-900"><span>Cross-Browser Compatibility</span><span class="mono-tag tw-text-gray-400">A11y</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION: CLIENT SERVICES & WHAT I CAN BUILD (FREELANCE SOLUTIONS)
+         ========================================================================= -->
+    <section id="services" class="tw-py-28 hairline-border-b" aria-label="Services and Client Solutions">
+      <div class="container-xxl">
+        <div class="row align-items-end justify-content-between tw-mb-14 gy-4">
+          <div class="col-12 col-md-8 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 03 &mdash; SERVICES &amp; SOLUTIONS</span>
+            <h2 class="section-heading tw-mb-3">
+              What I Can <span class="font-editorial-italic tw-font-normal">Build</span> For You.
+            </h2>
+            <p class="tw-text-gray-600 tw-text-lg tw-mb-0 font-arabic" dir="rtl">
+              حلول برمجية مباشرة وعملية لأصحاب المشاريع والشركات &bull; من الفكرة والتصميم إلى التنفيذ السريع والإطلاق الفعلي.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 text-md-end scroll-reveal-right">
+            <div class="hero-available-badge tw-inline-flex">
+              <span class="pulsing-dot" aria-hidden="true"></span>
+              <span class="font-arabic tw-font-semibold" dir="rtl">متاح للعمل على مشاريعكم الآن</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Services Cards Grid -->
+        <div class="row g-4">
+          
+          <!-- Service 1: Full-Stack Platforms -->
+          <div class="col-12 col-md-6 col-xl-3 scroll-reveal delay-1">
+            <div class="service-card">
+              <div class="tw-flex tw-items-center tw-justify-between tw-mb-4">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                </div>
+                <span class="service-step-badge">01 / PLATFORMS</span>
+              </div>
+              <h3 class="service-card-title" dir="rtl">تطبيقات ويب متكاملة</h3>
+              <div class="service-card-subtitle">Full-Stack Web Platforms</div>
+              <p class="service-card-desc" dir="rtl">
+                من الواجهة التفاعلية إلى قاعدة البيانات والسيرفر، بناء منصات متكاملة تشمل لوحات التحكم، المنصات التعليمية، وأنظمة الدفع الإلكتروني.
+              </p>
+              <ul class="service-checklist" dir="rtl">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>لوحات تحكم ذكية (Admin Dashboards)</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>منصات تعليمية وأنظمة محتوى (LMS &amp; SaaS)</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>ربط بوابات الدفع وحسابات المستخدمين</span>
+                </li>
+              </ul>
+              <a href="#contact" data-service-select="تطبيقات ويب متكاملة (Full-Stack Platform)" class="service-card-action">
+                <span dir="rtl">اطلب منصتك الآن</span>
+                <svg class="arrow-up-right-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 2: Ultra-Fast Landing Pages -->
+          <div class="col-12 col-md-6 col-xl-3 scroll-reveal delay-2">
+            <div class="service-card">
+              <div class="tw-flex tw-items-center tw-justify-between tw-mb-4">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+                <span class="service-step-badge">02 / LANDING</span>
+              </div>
+              <h3 class="service-card-title" dir="rtl">صفحات هبوط سريعة جداً</h3>
+              <div class="service-card-subtitle">Ultra-Fast Landing Pages</div>
+              <p class="service-card-desc" dir="rtl">
+                تصميم عصري وجذاب يفتح في أقل من ثانية لزيادة المبيعات والتحويلات، مع تجربة مستخدم سلسة متوافقة تماماً مع شاشات الموبايل.
+              </p>
+              <ul class="service-checklist" dir="rtl">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>سرعة فتح فورية (&lt;1s) ترفع المبيعات</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>واجهات حصرية وأنيقة تناسب هويتك</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>متوافقة تماماً مع الموبايل ومحركات البحث SEO</span>
+                </li>
+              </ul>
+              <a href="#contact" data-service-select="صفحة هبوط سريعة (Landing Page)" class="service-card-action">
+                <span dir="rtl">اطلب صفحة هبوط</span>
+                <svg class="arrow-up-right-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 3: APIs & Database Architecture -->
+          <div class="col-12 col-md-6 col-xl-3 scroll-reveal delay-3">
+            <div class="service-card">
+              <div class="tw-flex tw-items-center tw-justify-between tw-mb-4">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                </div>
+                <span class="service-step-badge">03 / APIS &amp; DB</span>
+              </div>
+              <h3 class="service-card-title" dir="rtl">تطوير وربط الـ APIs</h3>
+              <div class="service-card-subtitle">APIs &amp; Database Architecture</div>
+              <p class="service-card-desc" dir="rtl">
+                بناء وتأمين سيرفرات الـ Backend، وربط موقعك بالخدمات الخارجية، وهيكلة قواعد بيانات سريعة وقوية تتحمل ضغط العمليات والزوار.
+              </p>
+              <ul class="service-checklist" dir="rtl">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>بناء وتأمين سيرفرات الـ Backend</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>ربط بوابات الدفع والخدمات الخارجية</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>قواعد بيانات منظمة وسريعة الاستعلام</span>
+                </li>
+              </ul>
+              <a href="#contact" data-service-select="تطوير وربط الـ APIs وقواعد البيانات" class="service-card-action">
+                <span dir="rtl">اطلب تطوير Backend</span>
+                <svg class="arrow-up-right-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Service 4: Speed Optimization & Bug Fixing -->
+          <div class="col-12 col-md-6 col-xl-3 scroll-reveal delay-4">
+            <div class="service-card">
+              <div class="tw-flex tw-items-center tw-justify-between tw-mb-4">
+                <div class="service-icon-box" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg>
+                </div>
+                <span class="service-step-badge">04 / SPEED &amp; BUGS</span>
+              </div>
+              <h3 class="service-card-title" dir="rtl">تسريع المواقع وحل المشاكل</h3>
+              <div class="service-card-subtitle">Speed Tuning &amp; Bug Fixing</div>
+              <p class="service-card-desc" dir="rtl">
+                تحسين أداء وسرعة المواقع البطيئة للوصول لـ 95+ في Lighthouse، واكتشاف وحل المشاكل البرمجية والـ Bugs لضمان استقرار الموقع.
+              </p>
+              <ul class="service-checklist" dir="rtl">
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>تسريع التصفح ورفع سكور Lighthouse</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>كشف وإصلاح الـ Bugs والأخطاء فوراً</span>
+                </li>
+                <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span>ضغط الأكواد والميديا وتخفيف حمل السيرفر</span>
+                </li>
+              </ul>
+              <a href="#contact" data-service-select="تسريع الموقع وإصلاح المشاكل البرمجية" class="service-card-action">
+                <span dir="rtl">اطلب تسريع وفحص موقعك</span>
+                <svg class="arrow-up-right-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: REAL PRODUCTION PROJECTS SHOWCASE (SCREENSHOTS + ICONS)
+         ========================================================================= -->
+    <section id="work" class="tw-py-28 hairline-border-b" aria-label="Selected Production Projects">
+      <div class="container-xxl">
+        <div class="row align-items-end justify-content-between tw-mb-12 gy-4">
+          <div class="col-12 col-md-8 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 04 &mdash; PRODUCTION PORTFOLIO</span>
+            <h2 class="section-heading tw-mb-3">Selected <span class="font-editorial-italic tw-font-normal">Production</span> Work.</h2>
+            <p class="tw-text-gray-600 tw-text-lg tw-mb-0">Live applications shipped with real users, clean architecture, and verified source deployments.</p>
+          </div>
+          <div class="col-12 col-md-4 text-md-end scroll-reveal-right">
+            <a href="https://github.com/Zeyaddn?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-ghost-custom tw-py-2 tw-px-5">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>View All on GitHub</span>
+              <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project Category Filters -->
+        <div class="project-filters-wrap scroll-reveal" role="tablist" aria-label="Project category filters">
+          <button type="button" class="filter-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (6)</button>
+          <button type="button" class="filter-tab-btn" data-filter="nextjs" role="tab" aria-selected="false">Next.js &amp; React (3)</button>
+          <button type="button" class="filter-tab-btn" data-filter="fullstack" role="tab" aria-selected="false">Full Stack &amp; APIs (2)</button>
+          <button type="button" class="filter-tab-btn" data-filter="perf" role="tab" aria-selected="false">Lightweight &amp; Fast (1)</button>
+        </div>
+
+        <!-- Real Projects Grid with Browser Window Mockups -->
+        <div class="project-card-grid" id="projectsContainer">
+          
+          <!-- Project 1: Muslim Platform -->
+          <div class="real-project-card bento-span-7 scroll-reveal-left" data-category="nextjs">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>muslim-platform.vercel.app</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/muslim.webp" type="image/webp">
+                <img src="./assets/img/muslim.png" alt="Muslim Platform Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">01</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">NEXT.JS 14 &bull; PWA OFFLINE</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>60 FPS Smooth</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">The Muslim Platform</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Comprehensive Islamic Web Platform &amp; Recitation Engine</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                Complete Quran with live audio recitations, prayer times via Adhan.js, interactive Qibla compass, Athkar counter with state persistence, and full offline PWA service workers.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">Next.js 14</span>
+                <span class="work-tag-pill">React 18</span>
+                <span class="work-tag-pill">Adhan.js</span>
+                <span class="work-tag-pill">Web-Push</span>
+                <span class="work-tag-pill">PWA</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="muslim" aria-label="View case details for Muslim Platform">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://muslim-eight-iota.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of Muslim Platform">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Courses City LMS -->
+          <div class="real-project-card bento-span-5 scroll-reveal-right delay-1" data-category="nextjs">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>courses-sity.vercel.app</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/courses.webp" type="image/webp">
+                <img src="./assets/img/courses.png" alt="Courses City LMS Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">02</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">NEXT.JS &bull; STORYBOOK &bull; LMS</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>Telemetry Live</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">Courses City LMS</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Advanced Learning Platform &amp; Student Tracking</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                Full-featured LMS built with Storybook architecture: real-time video watch-time progress telemetry, student &amp; instructor dashboards, assignments, and modular UI components.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">Next.js</span>
+                <span class="work-tag-pill">Storybook</span>
+                <span class="work-tag-pill">Tailwind CSS</span>
+                <span class="work-tag-pill">Video Telemetry</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="courses" aria-label="View case details for Courses City LMS">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://courses-sity.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of Courses City LMS">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: FinTech Money -->
+          <div class="real-project-card bento-span-5 scroll-reveal-left" data-category="fullstack">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>fin-tech-money.vercel.app</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/fintech.webp" type="image/webp">
+                <img src="./assets/img/fintech.png" alt="FinTech Money Transfer System Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">03</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">NEXT.JS &bull; FINTECH &bull; BANKING</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>Encrypted State</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">FinTech Money System</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Instant Banking &amp; Wallet Transfer Dashboard</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                High-security transaction platform modeled on modern banking workflows: instant money transfers, real-time balances, recipient verification, and banking-grade security interfaces.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">Next.js</span>
+                <span class="work-tag-pill">TypeScript</span>
+                <span class="work-tag-pill">Banking UI</span>
+                <span class="work-tag-pill">Tailwind</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="fintech" aria-label="View case details for FinTech Money System">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://fin-tech-money.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of FinTech Money System">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Al Bayt Charity -->
+          <div class="real-project-card bento-span-7 scroll-reveal-right delay-1" data-category="fullstack">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>albaytcharity.kesug.com</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/albaytcharity.webp" type="image/webp">
+                <img src="./assets/img/albaytcharity.png" alt="Al Bayt Charity Portal Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">04</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">FULL STACK &bull; PHP &bull; MYSQL</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>Live Production</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">Al Bayt Charity Portal</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Aid Case Management &amp; Submission System</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                Humanitarian case management portal supporting support request submissions, document verification, donor tracking, and administrative case auditing.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">Full Stack</span>
+                <span class="work-tag-pill">PHP</span>
+                <span class="work-tag-pill">MySQL</span>
+                <span class="work-tag-pill">Admin CMS</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="albaytcharity" aria-label="View case details for Al Bayt Charity Portal">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://albaytcharity.kesug.com/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of Al Bayt Charity Portal">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: TravelSphere -->
+          <div class="real-project-card bento-span-6 scroll-reveal-left" data-category="nextjs">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>travelsphere.github.io</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/TravelSphere.webp" type="image/webp">
+                <img src="./assets/img/TravelSphere.png" alt="TravelSphere Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">05</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">REACT &bull; TOURISM &bull; SPA</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>Instant Filter</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">TravelSphere Global</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Interactive Destination Discovery &amp; Booking</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                Tourism web application featuring curated destination filtering, interactive tour schedules, dynamic cost calculations, and mobile-first responsive galleries.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">React.js</span>
+                <span class="work-tag-pill">Interactive UI</span>
+                <span class="work-tag-pill">CSS3 Architecture</span>
+                <span class="work-tag-pill">Responsive</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="travelsphere" aria-label="View case details for TravelSphere Global">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://zeyaddn.github.io/TravelSphere/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of TravelSphere Global">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: FreshFood -->
+          <div class="real-project-card bento-span-6 scroll-reveal-right delay-1" data-category="perf">
+            <div class="project-window-bar">
+              <div class="project-window-dots" aria-hidden="true">
+                <span class="project-dot p-dot-red"></span>
+                <span class="project-dot p-dot-yellow"></span>
+                <span class="project-dot p-dot-green"></span>
+              </div>
+              <div class="project-window-url">
+                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>freshfood.github.io</span>
+              </div>
+            </div>
+            <div class="real-project-media-wrap">
+              <picture>
+                <source srcset="./assets/img/FreshFood2.webp" type="image/webp">
+                <img src="./assets/img/FreshFood2.png" alt="FreshFood Market Interface Preview" class="real-project-img" width="600" height="338" loading="lazy" decoding="async">
+              </picture>
+              <span class="project-index-tag" aria-hidden="true">06</span>
+            </div>
+            <div class="real-project-body">
+              <div class="project-meta-row">
+                <span class="mono-tag tw-text-gray-500">HTML5 &bull; CSS3 &bull; JAVASCRIPT</span>
+                <span class="live-status-pill">
+                  <span class="live-status-dot" aria-hidden="true"></span>
+                  <span>&lt;0.5s Load</span>
+                </span>
+              </div>
+              <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">FreshFood Storefront</h3>
+              <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Fast Organic Grocery Market &amp; Express Cart Landing</p>
+              <p class="tw-text-gray-600 tw-text-sm tw-leading-relaxed tw-mb-4 tw-flex-grow">
+                Lightweight grocery and healthy food storefront with real-time interactive shopping cart calculations, nutritional highlights, and zero framework overhead.
+              </p>
+              <div class="tw-flex tw-flex-wrap tw-gap-1.5 tw-mb-5">
+                <span class="work-tag-pill">HTML5</span>
+                <span class="work-tag-pill">CSS3 Architecture</span>
+                <span class="work-tag-pill">Vanilla JS</span>
+                <span class="work-tag-pill">Lighthouse 100</span>
+              </div>
+              <div class="tw-flex tw-items-center tw-justify-between tw-pt-4 tw-border-t tw-border-gray-200">
+                <button type="button" class="btn-ghost-custom tw-py-1.5 tw-px-3.5 tw-text-xs" data-project-trigger="freshfood" aria-label="View case details for FreshFood Storefront">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                  <span>Case Details</span>
+                </button>
+                <a href="https://zeyaddn.github.io/FreshFood2/" target="_blank" rel="noopener noreferrer" class="btn-primary-custom tw-py-1.5 tw-px-4 tw-text-xs" aria-label="Open live demo of FreshFood Storefront">
+                  <span>Live Demo</span>
+                  <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 7: ENGINEERING JOURNEY (MODERN MILESTONES BENTO)
+         ========================================================================= -->
+    <section id="experience" class="tw-py-28 hairline-border-b" aria-label="Engineering Journey">
+      <div class="container-xxl">
+        <div class="row tw-mb-14">
+          <div class="col-12 col-md-8 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 05 &mdash; JOURNEY &amp; PRACTICE</span>
+            <h2 class="section-heading tw-mb-3">
+              My Engineering <span class="font-editorial-italic tw-font-normal">Journey</span>.
+            </h2>
+            <p class="tw-text-gray-600 tw-text-lg">Specialized academic foundations, production contracts, and architectural discipline.</p>
+          </div>
+        </div>
+
+        <div class="milestones-bento-grid">
+          
+          <!-- Milestone 1 -->
+          <div class="milestone-card scroll-reveal-journey-1">
+            <span class="milestone-step-num" aria-hidden="true">01</span>
+            <div class="milestone-badge-row">
+              <span class="milestone-era-tag">2024 — PRESENT</span>
+              <span class="milestone-location-tag">Faculty of Industry &amp; Energy &bull; Alexandria, Egypt</span>
+            </div>
+            <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">Borg El Arab Technological University (IT Department)</h3>
+            <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Full Stack Architecture &amp; Independent Production Contracts</p>
+            
+            <ul class="milestone-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Architected production Next.js 14 platforms including Quran audio synchronization, prayer times calculation engine (Adhan.js), and complete offline PWA caching.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Engineered enterprise EdTech LMS using Storybook components, SCORM 2004 standards, and real-time student watch-time progress telemetry.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Developed secure FinTech instant banking transaction interfaces with verified recipient lookups and state management.</span>
+              </li>
+            </ul>
+
+            <div class="tw-flex tw-flex-wrap tw-gap-2 tw-pt-2">
+              <span class="work-tag-pill">Next.js 14</span>
+              <span class="work-tag-pill">React 18</span>
+              <span class="work-tag-pill">Storybook</span>
+              <span class="work-tag-pill">SCORM 2004</span>
+              <span class="work-tag-pill">PWA Offline</span>
+              <span class="work-tag-pill">PostgreSQL</span>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="milestone-card scroll-reveal-journey-2 delay-1">
+            <span class="milestone-step-num" aria-hidden="true">02</span>
+            <div class="milestone-badge-row">
+              <span class="milestone-era-tag">2021 — 2024</span>
+              <span class="milestone-location-tag">Programming Department &bull; Mansoura, Egypt</span>
+            </div>
+            <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">WE Applied Technology School</h3>
+            <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Graduated with Honors &bull; Software Foundations &amp; Relational Databases</p>
+            
+            <ul class="milestone-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Built deep foundational mastery in relational database schemas (MySQL), server-side systems (PHP), OOP, and data structures.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Delivered the Al Bayt Charity humanitarian cases management system with role-based auth, document uploads, and case auditing.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Built FreshFood lightweight grocery storefront with interactive cart calculations and sub-0.5s zero-framework load speeds.</span>
+              </li>
+            </ul>
+
+            <div class="tw-flex tw-flex-wrap tw-gap-2 tw-pt-2">
+              <span class="work-tag-pill">WE School</span>
+              <span class="work-tag-pill">MySQL Relational</span>
+              <span class="work-tag-pill">PHP Full Stack</span>
+              <span class="work-tag-pill">OOP &amp; Data Structures</span>
+              <span class="work-tag-pill">Auth Security</span>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="milestone-card scroll-reveal-journey-3 delay-2">
+            <span class="milestone-step-num" aria-hidden="true">03</span>
+            <div class="milestone-badge-row">
+              <span class="milestone-era-tag">CORE DISCIPLINE</span>
+              <span class="milestone-location-tag">High Performance Standards &bull; Worldwide Standards</span>
+            </div>
+            <h3 class="tw-text-2xl tw-font-bold tw-text-gray-900 tw-mb-1">60 FPS Engineering &amp; Sub-500ms Performance</h3>
+            <p class="font-editorial-italic tw-text-gray-500 tw-text-base tw-mb-3">Speed, Clean Architecture &amp; Zero Bloat</p>
+            
+            <ul class="milestone-checklist">
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Relentless focus on performance budgets: optimizing React render cycles with memoization and eliminating layout thrashing.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sub-500ms server response targets, lightweight WebP media optimization, and 100/100 Lighthouse benchmark scores.</span>
+              </li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Full compliance with WCAG 2.1 AA accessibility, keyboard navigation, and semantic HTML5 architecture.</span>
+              </li>
+            </ul>
+
+            <div class="tw-flex tw-flex-wrap tw-gap-2 tw-pt-2">
+              <span class="work-tag-pill">60fps Profiling</span>
+              <span class="work-tag-pill">React.memo</span>
+              <span class="work-tag-pill">Lighthouse 100</span>
+              <span class="work-tag-pill">Web Vitals</span>
+              <span class="work-tag-pill">WCAG AA</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECTION 8: CONTACT
+         ========================================================================= -->
+    <section id="contact" class="tw-py-28" aria-label="Contact and Inquiries">
+      <div class="container-xxl">
+        <div class="row gy-5">
+          
+          <div class="col-12 col-lg-5 scroll-reveal-left">
+            <span class="mono-tag tw-text-gray-500 tw-block tw-mb-3">// 06 — GET IN TOUCH</span>
+            <h2 class="section-heading tw-mb-4">
+              Let’s build your next <span class="font-editorial-italic tw-font-normal">application</span>.
+            </h2>
+            <p class="tw-text-gray-600 tw-text-lg tw-leading-relaxed tw-mb-8">
+              Available immediately for freelance projects, technical contract work, and full stack development. Let's discuss your project scope, timeline, and architectural requirements.
+            </p>
+
+            <div class="tw-space-y-4 tw-mb-8">
+              <div>
+                <span class="mono-tag tw-text-gray-500 tw-block">Direct Email</span>
+                <a href="mailto:zeyadkassem83@gmail.com" class="tw-text-gray-900 hover:tw-text-black tw-font-mono tw-text-lg tw-no-underline tw-transition-colors">zeyadkassem83@gmail.com</a>
+              </div>
+              <div>
+                <span class="mono-tag tw-text-gray-500 tw-block">Location &amp; Availability</span>
+                <span class="tw-text-gray-900 tw-font-mono">Mansoura &bull; Alexandria, Egypt (Remote Worldwide)</span>
+              </div>
+            </div>
+
+            <!-- Download CV Direct Link -->
+            <div class="tw-mb-8">
+              <a href="./assets/Zeyad_Elassad_CV.pdf" download="Zeyad_Elassad_CV.pdf" class="btn-ghost-custom tw-py-2.5 tw-px-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Zeyad Elassad CV (PDF)</span>
+              </a>
+            </div>
+
+            <div class="tw-flex tw-flex-wrap tw-gap-3">
+              <a href="https://github.com/Zeyaddn?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn-ghost-custom magnetic-target" aria-label="GitHub Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub Repositories</span>
+                <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/zeyad-elassad-212236438/" target="_blank" rel="noopener noreferrer" class="btn-ghost-custom magnetic-target" aria-label="LinkedIn Profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn Profile</span>
+                <svg class="arrow-up-right-svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7 scroll-reveal-right">
+            <div class="tw-bg-gray-50 tw-border tw-border-gray-200 tw-rounded-3xl tw-p-8 md:tw-p-12">
+              <div id="formAlert" class="tw-hidden" role="alert" aria-live="polite"></div>
+
+              <form id="contactForm" novalidate action="https://formspree.io/f/placeholder" method="POST">
+                <input type="text" name="_honey" class="honeypot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                <div class="row g-4">
+                  <div class="col-12 col-sm-6">
+                    <label for="userName" class="mono-tag tw-text-gray-600 tw-block tw-mb-2">Your Name / Organization *</label>
+                    <input type="text" id="userName" name="name" class="form-control-custom" placeholder="e.g. Engineering Lead / Enterprise Client" required autocomplete="name">
+                  </div>
+
+                  <div class="col-12 col-sm-6">
+                    <label for="userEmail" class="mono-tag tw-text-gray-600 tw-block tw-mb-2">Your Work Email *</label>
+                    <input type="email" id="userEmail" name="email" class="form-control-custom" placeholder="e.g. client@company.com" required autocomplete="email">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="projectScope" class="mono-tag tw-text-gray-600 tw-block tw-mb-2">Project / Requirement</label>
+                    <input type="text" id="projectScope" name="subject" class="form-control-custom" placeholder="e.g. Next.js 14 Enterprise Architecture / Full Stack Platform">
+                  </div>
+
+                  <div class="col-12">
+                    <label for="userMessage" class="mono-tag tw-text-gray-600 tw-block tw-mb-2">Technical Specifications *</label>
+                    <textarea id="userMessage" name="message" rows="5" class="form-control-custom" placeholder="Describe your technical requirements, architecture scope, tech stack (Next.js, Node.js, APIs), and expected timeline..." required></textarea>
+                  </div>
+
+                  <div class="col-12 tw-pt-2">
+                    <button type="submit" id="contactSubmitBtn" class="btn-primary-custom tw-w-full md:tw-w-auto">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                      <span>Send Project Inquiry</span>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SECTION 9: FOOTER
+       ========================================================================= -->
+  <footer class="tw-py-12 hairline-border-t tw-bg-white scroll-reveal" role="contentinfo">
+    <div class="container-xxl">
+      <div class="row align-items-center justify-content-between gy-4">
+        
+        <div class="col-12 col-md-6">
+          <div class="tw-flex tw-items-center tw-gap-3 tw-mb-2">
+            <span class="brand-monogram">ZE<span class="dot"></span></span>
+            <span class="tw-font-bold tw-text-gray-900">Zeyad Elassad</span>
+          </div>
+          <p class="mono-tag tw-text-gray-500 tw-text-xs tw-mb-0">
+            &copy; 2026 Zeyad Elassad &bull; Freelance Full Stack Developer.
+          </p>
+        </div>
+
+        <div class="col-12 col-md-6 d-flex justify-content-md-end align-items-center gap-4">
+          <a href="https://github.com/Zeyaddn?tab=repositories" target="_blank" rel="noopener noreferrer" class="mono-tag tw-text-gray-500 hover:tw-text-black tw-no-underline">GitHub</a>
+          <a href="https://www.linkedin.com/in/zeyad-elassad-212236438/" target="_blank" rel="noopener noreferrer" class="mono-tag tw-text-gray-500 hover:tw-text-black tw-no-underline">LinkedIn</a>
+          <a href="#hero" class="btn-ghost-custom tw-py-2 tw-px-4 tw-text-xs" aria-label="Back to top">
+            <span>Back to Top</span>
+            <svg class="arrow-up-svg" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Case Study Modal -->
+  <div class="modal fade" id="projectCaseModal" tabindex="-1" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
+      <div class="modal-content modal-content-custom">
+        <div class="modal-header tw-p-6 tw-border-b tw-border-gray-200 tw-flex tw-justify-between tw-items-center">
+          <div>
+            <span class="mono-tag tw-text-gray-500 tw-block" id="modalProjectClient">Category</span>
+            <h3 class="modal-title tw-text-2xl tw-font-bold tw-text-gray-900 tw-mt-1" id="modalProjectTitle">Project Title</h3>
+          </div>
+          <button type="button" class="btn-close-custom" data-bs-dismiss="modal" aria-label="Close modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+        <div class="modal-body tw-p-6 md:tw-p-8">
+          <!-- Real Project Preview Image -->
+          <div class="tw-rounded-2xl tw-overflow-hidden tw-border tw-border-gray-200 tw-mb-6">
+            <img id="modalProjectImg" src="./assets/img/muslim.png" alt="Project preview" class="tw-w-full tw-h-auto tw-object-cover">
+          </div>
+
+          <div class="row g-3 tw-mb-6">
+            <div class="col-6 col-sm-4">
+              <span class="mono-tag tw-text-gray-500 tw-block">Role</span>
+              <span class="tw-text-gray-900 tw-font-semibold tw-text-sm" id="modalProjectRole">Full Stack Developer</span>
+            </div>
+            <div class="col-6 col-sm-4">
+              <span class="mono-tag tw-text-gray-500 tw-block">Year</span>
+              <span class="tw-text-gray-900 tw-font-semibold tw-text-sm" id="modalProjectYear">2024</span>
+            </div>
+            <div class="col-12 col-sm-4">
+              <span class="mono-tag tw-text-gray-500 tw-block">Status</span>
+              <span class="tw-text-gray-900 tw-font-semibold tw-text-sm">Live Production</span>
+            </div>
+          </div>
+
+          <div class="tw-mb-6">
+            <h4 class="tw-text-lg tw-font-bold tw-text-gray-900 tw-mb-2">Project Overview</h4>
+            <p class="tw-text-gray-600 tw-leading-relaxed" id="modalProjectDesc">Detailed description.</p>
+          </div>
+
+          <div class="tw-mb-6">
+            <h4 class="tw-text-lg tw-font-bold tw-text-gray-900 tw-mb-3">Performance &amp; Engineering Highlights</h4>
+            <div class="tw-grid tw-grid-cols-1 sm:tw-grid-cols-3 tw-gap-3" id="modalProjectStats"></div>
+          </div>
+
+          <div>
+            <h4 class="tw-text-lg tw-font-bold tw-text-gray-900 tw-mb-3">Stack &amp; Technologies</h4>
+            <div id="modalProjectTech"></div>
+          </div>
+        </div>
+        <div class="modal-footer tw-p-6 tw-border-t tw-border-gray-200 tw-flex tw-justify-between">
+          <button type="button" class="btn-ghost-custom" data-bs-dismiss="modal">Close Window</button>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-primary-custom" id="modalProjectLiveLink">
+            <span>Open Live Website</span>
+            <svg class="arrow-up-right-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Action Toast Notification -->
+  <div id="siteToast" class="custom-toast" role="status" aria-live="polite">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="siteToastMsg">Copied to clipboard!</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <script type="module" src="./js/main.js"></script>
+
+</body>
+</html>
