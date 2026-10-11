@@ -1,0 +1,28 @@
+{
+  "name": "zeyad-elassad-portfolio",
+  "version": "1.0.0",
+  "description": "Award-winning personal portfolio website for Zeyad Elassad",
+  "main": "js/main.js",
+  "type": "module",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npm run build:css",
+    "serve": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "creative-developer",
+    "threejs",
+    "gsap",
+    "awwwards",
+    "interactive"
+  ],
+  "author": "Zeyad Elassad",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
+  }
+}
