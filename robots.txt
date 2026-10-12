@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zeyadelassad.dev/sitemap.xml
+Sitemap: https://zeyaddn.github.io/portfolioo/sitemap.xml
