@@ -1,34 +1,48 @@
 # Zeyad Elassad — Portfolio
 
-صفحة بورتفوليو شخصية لـ **زياد الأسعد**، مطور Full Stack من المنصورة، مصر.
+Personal portfolio site for **Zeyad Elassad**, Full Stack Developer from Mansoura, Egypt.
 
-## الأقسام
-- Hero + Navigation (التصميم الأصلي)
+**Live:** https://zeyaddn.github.io/portfolioo/
+
+## Sections
+- Hero + Navigation
 - Marquee + About
-- Stack: الأدوات مقسمة (Frontend، Backend، Data، Quality)
-- Services: 4 خدمات بالعربي والإنجليزي
-- Projects: 7 مشاريع مع Case Details
+- Stack (Frontend, Backend, Data, Quality)
+- Services (4 services)
+- Projects (7 projects with case-study pages)
 - Education
-- Contact: إيميل، واتساب، GitHub، LinkedIn، وتحميل الـ CV
+- Contact: email, GitHub, LinkedIn, CV download
 
-## الملفات
+## Files
 ```
-index.html          الصفحة
-css/                bootstrap.min.css + custom.css
-dist/output.css     Tailwind utilities
-js/                 bootstrap.bundle.min.js + main.js
-assets/img/         الصور (WebP)
-Zeyad Elassad Cv.pdf
-robots.txt, sitemap.xml, _headers
+index.html            Homepage
+404.html              Custom not-found page
+projects/             7 case-study pages
+css/                  bootstrap.min.css + custom.css
+dist/output.css       Built Tailwind utilities
+js/                   bootstrap bundle + main.js + theme scripts
+assets/img/           Images (WebP)
+assets/Zeyad_Elassad_CV.pdf
+favicon.ico           Site icon
+assets/favicon.*      SVG / PNG / apple-touch icons
+robots.txt, sitemap.xml, .nojekyll
 ```
 
-## التشغيل
-افتح `index.html` عبر سيرفر محلي (مثلا `python -m http.server 8000`) لأن الـ modules مش بتشتغل من `file://`.
-التنسيق بيحمّل Tailwind من CDN، فمحتاج نت.
+## Local dev
+Serve over a local server (ES modules do not run from `file://`):
+```
+python -m http.server 8000
+```
 
-## النشر
-ارفع الفولدر كله على Netlify أو Cloudflare Pages أو Vercel.
-قبل النشر غيّر الدومين في `sitemap.xml`.
+Rebuild Tailwind after adding new utility classes:
+```
+npm run build:css
+```
 
-## التواصل
+## Deploy
+Hosted on **GitHub Pages** (branch `main`, root folder). Enable under
+Settings → Pages → Branch: `main` / `/ (root)`.
+The `.nojekyll` file disables Jekyll processing.
+
+## Contact
 zeyadkassem83@gmail.com
